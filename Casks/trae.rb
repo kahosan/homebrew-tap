@@ -8,4 +8,13 @@ cask "trae" do
   homepage "https://www.trae.ai/"
 
   app "Trae.app"
+  binary "#{appdir}/Trae.app/Contents/Resources/app/bin/marscode", target: "trae"
+
+  zap trash: [
+    "~/.trae",
+    "~/Library/Application Support/Caches/cursor-updater",
+    "~/Library/Application Support/Trae",
+    "~/Library/Preferences/com.trae.app.plist",
+    "~/Library/Saved Application State/com.trae.app.savedState",
+  ]
 end
