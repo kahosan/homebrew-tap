@@ -1,4 +1,4 @@
-cask "cursor" do
+cask "trae" do
   version "1.0.5431"
   sha256 "795fa8e59917455d11e416c533694485677043bb6e2b4e0c4df3d4e50b13973b"
 
