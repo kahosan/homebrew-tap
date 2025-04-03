@@ -15,5 +15,10 @@ cask "sfm@beta" do
   uninstall quit:       "io.nekohasekai.sfa.independent",
             login_item: "SFM"
 
-  zap trash: "~/Library/Group Containers/group.io.nekohasekai.sfa"
+  zap trash: [
+    "~/Library/Group Containers/group.io.nekohasekai.sfavt",
+    "~/Library/Containers/io.nekohasekai.sfavt.standalone"
+    "~/Library/Application Scripts/io.nekohasekai.sfavt.standalone"
+    "~/Library/Application Scripts/group.io.nekohasekai.sfavt"
+  ]
 end
